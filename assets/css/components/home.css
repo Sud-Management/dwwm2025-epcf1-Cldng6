@@ -1,11 +1,16 @@
 main{
     width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
     background-color: var(--background-color);
 
     .banner{
+        width: 100%;
         background-image: url(/assets/images/banner.png);
         background-repeat: no-repeat;
-        width: 100%;
         margin: 0;
         background-size: cover;
         background-position: center;
@@ -15,4 +20,47 @@ main{
         width: 68%;
         font-weight: 40px;
     }
+    
+}
+.hero-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    ;
+    /* section my identity */
+    .myface-content{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50px;
+    .myface-item{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .myface-item-img{
+        align-items: center;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        img{
+            background-color: bisque;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+    }
+
+    
+}
 }
