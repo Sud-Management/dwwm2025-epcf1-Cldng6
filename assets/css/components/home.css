@@ -1,0 +1,7 @@
+main{
+    background-color: var(--background-color);
+    display: flex;
+    .banner{
+        color: red;
+    }
+}
