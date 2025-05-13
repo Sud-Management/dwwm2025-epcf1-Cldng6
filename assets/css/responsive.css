@@ -1,8 +1,54 @@
 /* resposive vesion mobile */
 @media screen and (max-width: 767px){
+    body{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        background-color: blue;
+        .item-h-img{
+            h1{
+                display: none;
+            }
+        }
+    }
+    .hero-container {
+        max-width: 100%;
+    }
+    nav{
+        display: none;
+    }
+    /* switch background */
+    .switch-off-theme{
+        display: none;
+        background-color: transparent;
 
+    }
+    .switch-on-theme{
+        /* display: none; */
+        background-color: transparent;
+    }
+    .menu-hamburger{
+        display: initial;
+        text-decoration: none;
+        list-style: none;
+    }
 }
 /* resposive vesion desktop */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    body{
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
 
+    }
+    header{
+        background-color: rgb(255, 0, 106);
+        }
+    .hero-container {
+        max-width: 640px;
+    }
 }
