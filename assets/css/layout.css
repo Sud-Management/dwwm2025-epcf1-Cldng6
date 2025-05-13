@@ -1,16 +1,37 @@
 header{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #000000;
     height: 106px;
+    display: flex;
+
+    .item-h-img{
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 56px;
+    }
     nav{
-
+        width: 20%;
         ul{
-
+            display: flex;
+            justify-content: space-around;
             li a {
                 text-decoration: none;
             }
+        }
+    }
+    .item-switch-burger{
+        width: 10%;
+        display: flex;
+        margin: 0;
+        justify-content: space-around;
+        align-items: center;
+        .hamburger{
+            /* display: none; */
         }
     }
 }

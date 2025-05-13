@@ -1,7 +1,7 @@
 main{
     width: 100%;
     background-color: var(--background-color);
-    display: flex;
+
     .banner{
         background-image: url(/assets/images/banner.png);
         background-repeat: no-repeat;
@@ -10,5 +10,9 @@ main{
         background-size: cover;
         background-position: center;
         padding: 120px 0 120px 320px;
+    }
+    p{
+        width: 68%;
+        font-weight: 40px;
     }
 }

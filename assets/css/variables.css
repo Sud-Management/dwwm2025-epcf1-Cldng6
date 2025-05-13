@@ -42,3 +42,9 @@ a {
    color: #DAA520;
    font-size: 45px;
 }
+
+button{
+    text-decoration: none;border: 0;
+    background-color: black;
+
+}

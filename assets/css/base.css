@@ -1,21 +1,25 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
     width: 100%;
     box-sizing: border-box;
-    margin: 0;
 
 }
-.switch-off{
+/* switch background */
+.switch-off-theme{
     display: none;
 
 }
-.switch-on{
+.switch-on-theme{
+    /* display: none; */
+}
+.menu-hamburger{
     display: none;
 }
-
 header,
 footer{
     img{
