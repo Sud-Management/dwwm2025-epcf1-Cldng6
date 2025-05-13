@@ -1,7 +1,14 @@
 main{
+    width: 100%;
     background-color: var(--background-color);
     display: flex;
     .banner{
-        color: red;
+        background-image: url(/assets/images/banner.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        margin: 0;
+        background-size: cover;
+        background-position: center;
+        padding: 120px 0 120px 320px;
     }
 }

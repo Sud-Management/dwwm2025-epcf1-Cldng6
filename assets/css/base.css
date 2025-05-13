@@ -3,6 +3,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
+    width: 100%;
     box-sizing: border-box;
     margin: 0;
 
@@ -14,9 +15,14 @@ body{
 .switch-on{
     display: none;
 }
-img{
-    width: 80px;
-    border-radius: 50%;
-    border: 1px solid ;
-    object-fit: cover;
+
+header,
+footer{
+    img{
+        width: 80px;
+        border-radius: 50%;
+        border: 1px solid ;
+        object-fit: cover;
+        image-orientation: flip;
+    }
 }
