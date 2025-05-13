@@ -20,6 +20,31 @@ main{
         width: 68%;
         font-weight: 40px;
     }
+    /* section technologies & frameworks */
+    .techn-framew-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .techn-framew-content{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            .techn-framew-item{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+                
+            }
+        }
+
+    }
     
 }
 .hero-container {
@@ -32,12 +57,12 @@ main{
     ;
     /* section my identity */
     .myface-content{
-        width: 90%;
+        width: 60%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         background-color: rgb(0, 0, 0);
-        border-radius: 50px;
+        border-radius: 30px;
     .myface-item{
         width: 50%;
         display: flex;
@@ -47,14 +72,14 @@ main{
     }
     .myface-item-img{
         align-items: center;
-        width: 30%;
+        width: 50%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
         img{
-            background-color: bisque;
             width: 100%;
+            background-color: bisque;
             object-fit: cover;
             border-radius: 10px;
         }
@@ -62,5 +87,5 @@ main{
     }
 
     
-}
+    }
 }
