@@ -1,0 +1,65 @@
+main{
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+.hero-container{
+    background-image: url(/assets/images/graphique.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 100;
+    /* background-color: var(--dark-theme); */
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: ; */
+    /* position: relative; */
+    
+}
+fieldset{
+    width: 100%;
+    border: 1px solid red;
+    background-color: antiquewhite;
+    ol{
+        padding-inline: 30px;
+        li {
+            list-style: upper-latin;
+            padding: 6px;
+        }
+    }
+}
+.todo-container{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .todo-content{
+        background-image: url(/assets/images/font-oeil.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50px;
+        height: 300px;
+        display: flex;
+        .todo-img{
+            width: 20%;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .todo-item{
+            width: 80;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+}
