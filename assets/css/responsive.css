@@ -1,15 +1,20 @@
 /* resposive vesion mobile */
-@media screen and (max-width: 767px){
+@media screen and (max-width: 640px){
     body{
         width: 100%;
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
     }
     header{
+        width: 100%;
         display: flex;
         justify-content: space-around;
-        width: 100%;
         background-color: blue;
+        padding-inline: 109px;
+        gap: 10px;
         .item-h-img{
+            width: 0;
             h1{
                 display: none;
             }
@@ -36,9 +41,40 @@
         text-decoration: none;
         list-style: none;
     }
+    .item-switch-burger {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        font-size: 25px;
+    }
+    footer{
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        hr{
+            display: inline;
+            width: 300Px;
+        }
+        div{
+            a{
+                text-decoration: none;
+            }
+        }
+    .reseaux {
+        a{
+            font-size: 10px;
+        }
+    }
 }
-/* resposive vesion desktop */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+/* resposive vesion tablette */
+@media screen and (min-width: 641px) and (max-width: 768px) {
     body{
         margin: 0;
         width: 100%;
@@ -51,4 +87,21 @@
     .hero-container {
         max-width: 640px;
     }
+}
+
+/* resposive vesion desktop */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    body{
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+    header{
+        background-color: rgb(172, 68, 68);
+        }
+    .hero-container {
+        max-width: 640px;
+    }
+}
 }
