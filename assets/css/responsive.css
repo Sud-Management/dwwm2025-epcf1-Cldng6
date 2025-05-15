@@ -90,7 +90,7 @@
         justify-content: space-between;
         /* gap: 10px; */
         .item-h-img{
-            width: 20%;
+            width: auto;
             h1{
                 display: none;
             }
