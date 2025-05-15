@@ -102,4 +102,11 @@ footer{
         object-fit: cover;
         image-orientation: flip;
     }
+    .link{
+        a{
+            color: var(--link-color);
+            font-size: 1.5em;
+            padding: 10px;
+        }
+    }
 }
