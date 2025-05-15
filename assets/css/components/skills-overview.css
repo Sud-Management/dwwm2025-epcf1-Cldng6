@@ -1,5 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+
 main{
     box-sizing: border-box;
+    width: 100%;
     background-color: var(--background-color);
     display: flex;
     flex: 1;
@@ -10,31 +18,26 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 500px;
-    filter: invert(1);
-    height: 100;
+    width: 15%;
     border-radius: 30px;
-    /* background-color: var(--dark-theme); */
-    background-color: rgb(53, 53, 53);
+    background-color: rgba(31, 30, 30, 0.945);
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* padding: ; */
-    /* position: relative; */
-    
 }
 fieldset{
-    width: 90%;
-    height: 99%;
+    height: auto;
     border-radius: 30px;
     width: 100%;
-    h4{
-        font-size: 2em;
-        text-decoration: underline solid rgb(255, 255, 255);
+    legend{
+        font-size: 1.5em;
+        font-family: julee;
+        color: var(--link-color);
         text-decoration-style: wavy;
         padding-inline: 4px;
     }
-    /* border: 1px solid rgb(0, 68, 214); */
+    h4{
+        font-size: 1.1em;
+    }
     background-color: rgba(0, 0, 0, 0.658);
     ol{
         display: flex;flex-direction: column;
@@ -47,12 +50,12 @@ fieldset{
             margin: 5px 0;
             transition: transform 0.2s ease;
             a{
-                font-size: 1.5em;
+                font-size: 1em;
                 color: aliceblue;
                 font-family: julee;
                 &:hover {
                     color:  var(--link-color-hover);
-                    font-size: 2em;
+                    font-size: 1.1em;
                     transition: 2s;
                     text-shadow:  3px 3px 7px var(--link-color);
                 }
@@ -71,9 +74,9 @@ fieldset{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        filter: invert(1);
         border-radius: 50px;
-        height: 300px;
+        height: 10%;
+        width: 90%;
         display: flex;
         .todo-img{
             width: 10%;
@@ -97,6 +100,84 @@ fieldset{
                 background: radial-gradient(#5a520746, #000000);
                 border-radius: 50px;
                 padding: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1440px){
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .todo-container{
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .todo-content{
+            background-image: url(/assets/images/font-oeil.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50px;
+            height: 10%;
+            width: 90%;
+            display: flex;
+            .todo-img{
+                width: 10%;
+                object-fit: cover;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main{
+        flex-direction: column;
+    }
+    .hero-container{
+        background-image: url(/assets/images/graphique.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        border-radius: 30px;
+        background-color: rgba(31, 30, 30, 0.945);
+        display: flex;
+        flex-direction: column;
+    }
+    .todo-container{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        .todo-content{
+            background-image: url(/assets/images/font-oeil.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50px;
+            height: 10%;
+            width: 80%;
+            display: flex;
+            .todo-img{
+                width: 10%;
+                object-fit: cover;
+                img{
+                    height: 10%;
+                }
             }
         }
     }
