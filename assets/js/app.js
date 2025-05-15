@@ -29,3 +29,28 @@ btn.addEventListener('click', (event) => {
     //     menu.style.display = 'none';
     // }
 
+// 1. récupérer le bouton
+const switchBtn = document.getElementById("switch-on")
+
+// const switchBtn = document.getElementById("hambuger")
+// 2. récupérer la main
+const main = document.querySelector('main');
+const switchBtnOn = document.getElementById('switch-on');
+const switchBtnOff = document.getElementById('switch-off');
+console.log(switchBtnOff, switchBtn);
+
+// const ul = document.querySelector ('ul')
+
+// 3. détecter le clic sur le bouton...
+switchBtn.addEventListener('click', (event) => {
+    
+    if (main.className === '') {
+        // 4. ...pour afficher la liste
+        main.style.backgroundColor = '#ffffff'
+
+            
+        }else{
+            main.backgroundColor = 'black'
+
+        }
+    })
