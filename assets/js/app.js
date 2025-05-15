@@ -4,6 +4,7 @@ const btn = document.getElementById("hambuger")
 // const switchBtn = document.getElementById("hambuger")
 // 2. récupérer la nav
 const menu = document.querySelector('nav');
+// const ul = document.querySelector ('ul')
 
 // 3. détecter le clic sur le bouton...
 btn.addEventListener('click', (event) => {
@@ -11,7 +12,7 @@ btn.addEventListener('click', (event) => {
     if (menu.className === '') {
         // 4. ...pour afficher la liste
         menu.className = 'menu-hamburger-on'
-        // btn.className = 'button-off'
+        // ul.style.background = 'red'
             
         }else{
             menu.className = ''

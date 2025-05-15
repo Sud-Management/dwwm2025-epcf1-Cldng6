@@ -11,25 +11,52 @@ main{
     background-size: cover;
     background-position: center;
     width: 500px;
+    filter: invert(1);
     height: 100;
+    border-radius: 30px;
     /* background-color: var(--dark-theme); */
     background-color: rgb(53, 53, 53);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     /* padding: ; */
     /* position: relative; */
     
 }
 fieldset{
+    width: 90%;
+    height: 99%;
+    border-radius: 30px;
     width: 100%;
-    border: 1px solid red;
-    background-color: antiquewhite;
+    h4{
+        font-size: 2em;
+        text-decoration: underline solid rgb(255, 255, 255);
+        text-decoration-style: wavy;
+        padding-inline: 4px;
+    }
+    /* border: 1px solid rgb(0, 68, 214); */
+    background-color: rgba(0, 0, 0, 0.658);
     ol{
-        padding-inline: 30px;
+        display: flex;flex-direction: column;
+        text-align: center;
+        padding-inline: 20px;
+        margin: 0;
+        width: 100%;
         li {
-            list-style: upper-latin;
-            padding: 6px;
+            padding: 15px 0 0 0;
+            margin: 5px 0;
+            transition: transform 0.2s ease;
+            a{
+                font-size: 1.5em;
+                color: aliceblue;
+                font-family: julee;
+                &:hover {
+                    color:  var(--link-color-hover);
+                    font-size: 2em;
+                    transition: 2s;
+                    text-shadow:  3px 3px 7px var(--link-color);
+                }
+            }
         }
     }
 }
@@ -44,22 +71,33 @@ fieldset{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        filter: invert(1);
         border-radius: 50px;
         height: 300px;
         display: flex;
         .todo-img{
-            width: 20%;
+            width: 10%;
+            object-fit: cover;
             img{
-                width: 100%;
-                object-fit: cover;
+                height: 100%;
             }
         }
         .todo-item{
-            width: 80;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+            h2{
+                background: radial-gradient(#7e7e7e80, #00000080);
+                border-radius: 50px;
+                padding: 10px; 
+            }
+            p{
+                background: radial-gradient(#5a520746, #000000);
+                border-radius: 50px;
+                padding: 20px;
+            }
         }
     }
 }

@@ -12,6 +12,7 @@ header{
         justify-content: flex-end;
         align-items: center;
     }
+    
     nav{
         width: 35%;
         ul{
@@ -31,7 +32,9 @@ header{
         } */
     }
 }
-
+.menu-hamburger-on{
+    display: none;
+}
 footer{
     display: flex;
     justify-content: space-around;

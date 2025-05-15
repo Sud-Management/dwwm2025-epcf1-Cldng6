@@ -26,6 +26,9 @@
             font-size: 3.9em;
         }
     }
+    .menu-hamburger-on{
+        display: none;
+    }
     nav{
         width: 40%;
         ul{
@@ -60,6 +63,9 @@
         h1{
             font-size: 3.6em;
         }
+    }
+    .menu-hamburger-on{
+        display: none;
     }
     nav{
         width: 45%;
@@ -99,6 +105,9 @@
     .hero-container {
         max-width: 100%;
     }
+    .menu-hamburger-on{
+        display: block;
+    }
     nav{
         display: none;
     }
@@ -116,6 +125,7 @@
         display: initial;
         text-decoration: none;
         list-style: none;
+        z-index: 1;
     }
     .item-switch-burger {
         display: inline;

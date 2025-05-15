@@ -37,6 +37,7 @@ p {
     font-size: 25px;
     color: var(--text-color);
 }
+
 li a {
     text-decoration: none;
     font-size: 2.1em;
@@ -56,6 +57,7 @@ button{
     text-decoration: none;
     border: 0;
 }
+
 /* switch background */
 .switch-off-theme{
     display: none;
@@ -70,24 +72,24 @@ button{
     background-color: transparent;
 }
 .menu-hamburger-on{
+    transition: all 1s ease-out;
     display: block;
     background-color: transparent;
-    width: 60%;
+    width: 45%;
     position: absolute;
+    right: 0;
+    gap: 10px;
     ul {
         position: relative;
         display: flex;
-        flex-direction: column;
-        top: 100px;
-        width: 100%;
-        left: top;
-
-        width:100%;
-        transition: all 2s ease-in-out;
+        top: 80px;
+        flex-direction: column;        
+        border-radius: 36px 0;
         align-items: center;
-        background-color: #FFF;
+        background-color: #000000;
         li{
             font-size: 1em;
+            transition: all 1s ease-out;
 
         }
     }
