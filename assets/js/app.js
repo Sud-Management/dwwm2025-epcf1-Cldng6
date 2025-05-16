@@ -37,7 +37,7 @@ const switchBtn = document.getElementById("switch-on")
 const main = document.querySelector('main');
 const switchBtnOn = document.getElementById('switch-on');
 const switchBtnOff = document.getElementById('switch-off');
-console.log(switchBtnOff, switchBtn);
+// console.log(switchBtnOff, switchBtn);
 
 // const ul = document.querySelector ('ul')
 
